@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Tailwind CSS</title>
+  <title>HTML BoilerPlate with TailWindCSS</title>
   <!-- Favicon -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link href="./output.css" rel="stylesheet">
@@ -11,19 +11,22 @@
 <body>
   <div class="flex flex-col min-h-screen">
     <!-- Header Section -->
-    <header>
-      <nav class="sticky top-0 z-10 bg-card shadow-sm bg-blue-500"><!-- Beginning of Top Sticky Navigation div -->
+    <header class="sticky top-0 z-10 bg-card shadow-sm bg-blue-500">
+      <!-- Beginning of Top Sticky Navigation div -->
+      <nav>
         <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-5 px-5 py-3">
           <a href="#" class="text-2xl font-bold text-primary text-white">
             BrandName
           </a>
         </div>
-      </nav><!-- End of Navigation div -->
+      </nav>
+      <!-- End of Navigation div -->
     </header>
 
     <!-- Main Content --> 
     <main class="max-w-7xl mx-auto p-5 flex w-full grow gap-5">
-      <nav class="sticky top-[5.25rem] h-fit hidden sm:block flex-none space-y-8 rounded-2xl bg-card px-3 py-5 lg:px-5 shadow-sm xl:w-80"><!-- Beginning of Side Sticky Nav -->
+      <!-- Beginning of Side Sticky Nav -->
+      <nav class="sticky top-[5.25rem] h-fit hidden sm:block flex-none space-y-8 rounded-2xl bg-card px-3 py-5 lg:px-5 shadow-sm xl:w-80">
         <div class="space-y-2">
           <h2 class="text-sm font-semibold tracking-widest uppercase dark:text-gray-600">Getting Started</h2>
           <div class="flex flex-col space-y-1">
@@ -40,7 +43,14 @@
             <a href="#" class="hover:underline">Migration</a>
           </div>
         </div>
-      </nav><!-- End of Side Nav -->
+      </nav>
+      <!-- End of Side Nav -->
+
+      <!-- Begining of middle content -->
+      <div class="w-full min-w-0 flex gap-5 space-y-5">
+        <!-- Paste Content to test Here -->
+        Content goes here!
+      </div>
     </main>
 
     <!-- Footer Section -->
