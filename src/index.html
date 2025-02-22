@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Tailwind CSS</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header>
+      <nav class="sticky top-0 z-10 bg-card shadow-sm bg-blue-500"><!-- Beginning of Top Sticky Navigation div -->
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-5 px-5 py-3">
+          <a href="#" class="text-2xl font-bold text-primary text-white">
+            BrandName
+          </a>
+        </div>
+      </nav><!-- End of Navigation div -->
+    </header>
+
+    <!-- Main Content --> 
+    <main class="max-w-7xl mx-auto p-5 flex w-full grow gap-5">
+      <nav class="sticky top-[5.25rem] h-fit hidden sm:block flex-none space-y-8 rounded-2xl bg-card px-3 py-5 lg:px-5 shadow-sm xl:w-80"><!-- Beginning of Side Sticky Nav -->
+        <div class="space-y-2">
+          <h2 class="text-sm font-semibold tracking-widest uppercase dark:text-gray-600">Getting Started</h2>
+          <div class="flex flex-col space-y-1">
+            <a href="#" class="hover:underline">Installation</a>
+            <a href="#" class="hover:underline">Plugins</a>
+            <a href="#" class="hover:underline">Migration</a>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-sm font-semibold tracking-widest uppercase dark:text-gray-600">Dashboard</h2>
+          <div class="flex flex-col space-y-1">
+            <a href="#" class="hover:underline">Installation</a>
+            <a href="#" class="hover:underline">Plugins</a>
+            <a href="#" class="hover:underline">Migration</a>
+          </div>
+        </div>
+      </nav><!-- End of Side Nav -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="max-w-7xl mx-auto mt-32 w-full px-4 sm:px-6 lg:px-8">
+      <!-- Footer Last Segment -->
+      <div class="items-centers grid grid-cols-1 justify-between gap-4 border-t border-gray-100 py-6 md:grid-cols-2">
+        <p class="text-sm/6 text-slate-600 max-md:text-center">&copy; 2025 BrandName. All rights reserved.</p>
+        <div class="flex items-center justify-center space-x-4 text-sm/6 text-slate-900 md:justify-end">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <div class="h-4 w-px bg-slate-200"></div>
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
